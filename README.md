@@ -43,7 +43,7 @@ Most references state that wagers should be rounded to the dollar to help avoid 
 self.result = [round(x, 2) for x in self.result]
 ```
 
-Submitting a wager has been commented out in the programs. You can submit a wager but uncommenting this section of code:
+Submitting a wager has been commented out in the programs. You can submit a wager by uncommenting this section of code:
 
 ```
 self.pool.apply_async(self.process, args=(9, 0, 0, 0,))
