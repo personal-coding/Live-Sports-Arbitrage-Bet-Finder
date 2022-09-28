@@ -15,7 +15,7 @@ There are four Python programs in this repository.
 
 The program will first scrape all live event names and odds based on the sport selected in the program. The live event names are matched against each sportsbook in order to compare live odds. Using a Nash equilibrium, the program will find if there are arbitrage betting opportunities. If an arbitrage is found, then the program will select that wager, enter the calculated wager amounts and place the bet.
 
-**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds. During my tests, the average acceptance on both legs of the bet was ~70%. This is not high enough to maintain a profitable arbitrage betting strategy.
+**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds. During my tests, the average acceptance on both legs of the bet was ~70%. This is not high enough to maintain a profitable arbitrage betting strategy without further updates to the program.
 
 ## Personalizing the programs
 
@@ -35,6 +35,12 @@ self.bet_limit = 0.10  # Most websites require a minimum of $0.10 a wager on eac
 self.odds_limit = 750  # The upper odds limit that you want to wager on (i.e. +750)
 ```
 
+Most references state that wagers should be rounded to the dollar to help avoid arbitrage detection. Update the round function below to zero decimal places if you need:
+
+```
+self.result = [**round(x, 2)** for x in self.result]
+```
+
 Submitting a wager has been commented out in the programs. You can submit a wager but uncommenting this section of code:
 
 ```
@@ -43,3 +49,7 @@ self.pool.apply_async(self.process, args=(10, 0, 0, 0,))
 # Join the pools so they run in parallel
 self.pool.join()
 ```
+
+## Additional information about the programs
+
+The programs use the naming convention "bid" and "ask." I built the programs from a framework that traded binary options and did not update the naming convention. "Bid" means DraftKings or William Hill, while "ask" means FanDuel.
