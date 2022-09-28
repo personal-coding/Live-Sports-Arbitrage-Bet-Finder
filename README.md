@@ -38,7 +38,7 @@ self.odds_limit = 750  # The program will not wager above these odds (i.e. +750)
 Most references state that wagers should be rounded to the dollar to help avoid arbitrage detection. Update the round function below to zero decimal places if you need:
 
 ```
-self.result = [**round(x, 2)** for x in self.result]
+self.result = [round(x, 2) for x in self.result]
 ```
 
 Submitting a wager has been commented out in the programs. You can submit a wager but uncommenting this section of code:
