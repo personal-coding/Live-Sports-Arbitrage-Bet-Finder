@@ -32,7 +32,7 @@ self.main_bet_amount = 100  # Total amount to wager. The program will split the 
 self.lower_limit = 0.000  # Lower arbritage limit to bet on, as a percentage
 self.upper_limit = 0.070  # Upper arbritage limit to bet on, as a percentage (0.070 = 7%)
 self.bet_limit = 0.10  # Most websites require a minimum of $0.10 a wager on each bet
-self.odds_limit = 750  # The upper odds limit that you want to wager on (i.e. +750, in other words don't wager higher than these odds)
+self.odds_limit = 750  # The program will not wager above these odds (i.e. +750)
 ```
 
 Most references state that wagers should be rounded to the dollar to help avoid arbitrage detection. Update the round function below to zero decimal places if you need:
