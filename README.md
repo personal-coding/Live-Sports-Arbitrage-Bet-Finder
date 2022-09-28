@@ -15,7 +15,7 @@ There are four Python programs in this repository.
 
 The program will first scrape all live event names and odds based on the sport selected in the program. The live event names are matched against each sportsbook in order to compare live odds. Using a Nash equilibrium, the program will find if there are arbitrage betting opportunities. If an arbitrage is found, then the program will select that wager, enter the calculated wager amounts and place the bet.
 
-**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds. During my tests, the average acceptance on both legs of the bet was ~70%. This is not high enough to maintain a profitable arbitrage betting strategy without further updates to the program.
+**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds. During my tests, the average acceptance on both legs of the bet was ~70%. This is not high enough to maintain a profitable arbitrage betting strategy without further updates to the program and wagering logic.
 
 ## Personalizing the programs
 
