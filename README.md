@@ -6,6 +6,8 @@
 
 _**I've provided this code for informational purposes, and do not take responsibility for potential losses or gains. Bet at your own risk.**_
 
+This program will find arbitrage betting opportunities during live sports events. The program will scrape live data off betting websites every 10 milliseconds, find if an arbitrage exists, calculate the exact wagering amounts needed, and place bets.
+
 There are four Python programs in this repository.
 
 - The program names start with F & D or F & W. F stands for FanDuel, D stands for DraftKings, and W stands for William Hill.
