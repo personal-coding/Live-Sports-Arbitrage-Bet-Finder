@@ -17,7 +17,7 @@ The program will first scrape all live event names and odds based on the sport s
 
 The programs use multithreading to make them as fast as possible to find arbitrage opportunities. Also, the programs use the [undetected-chromedriver-modified](https://pypi.org/project/undetected-chromedriver-modified/) package to help avoid bot detection.
 
-**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds. During my tests, the average acceptance on both legs of the bet was ~70%. This is not high enough to maintain a profitable arbitrage betting strategy without further updates to the program and wagering logic.
+**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds.
 
 ## Personalizing the programs
 
