@@ -21,6 +21,10 @@ The programs use multithreading to make them as fast as possible to find arbitra
 
 **Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds.
 
+## Troubleshooting Error
+
+If you run into an error that states `AttributeError: 'ArbFinder' object has no attribute 'driver'` go to `chrome://settings/help` in your URL bar. There may be a relaunch option where your Chrome version is. Otherwise, try to upgrade your Chrome version. Your Chrome version may be different from the ChromeDriver version downloaded by the program.
+
 ## Personalizing the programs
 
 Update this section of the code if you want to bet on a different sport:
