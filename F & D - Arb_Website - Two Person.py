@@ -130,7 +130,7 @@ class App(object):
                 # Find live odds from the website
                 case 2:
                     self.ask.results = self.ask.driver.find_elements(By.XPATH,
-                        "(//div[contains(@style,'flex-direction: column')])[last()]//a[@target='_self' and contains(@title,' ') and contains(.,'live event')]/..//a[@target='_self' and contains(@title,' ') and not(contains(.,'live event'))]/..")
+                        "//a[@target='_self' and contains(@title,' ') and contains(.,'live event')]/..//a[@target='_self' and contains(@title,' ') and not(contains(.,'live event'))]/..")
                     for n, el in enumerate(self.ask.results):
                         self.result_ask = self.ask.results[n]
                         # self.ask.driver.execute_script("arguments[0].scrollIntoView();", self.result_ask)
