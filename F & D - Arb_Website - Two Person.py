@@ -39,7 +39,7 @@ class ArbFinder(object):
                 # Change to ask view since the default is the bid view
                 self.type = "ASK"
                 self.driver.find_element(By.XPATH,
-                                         "//a[contains(@href,'/live') and @title='" + self.sport + "']").click()
+                                         "//a[contains(@href,'/live')]//span[text()='" + self.sport + "']").click()
 
             elif (BID):
                 # Nothing to update since the default is the bid view
@@ -189,7 +189,7 @@ class App(object):
                     self.ask.driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
 
                     self.ask_wager = self.ask.driver.find_element(By.XPATH,
-                        "//div[@class='[object Object]']//div[contains(@style,'transform')]").text.strip()
+                        "//li//div[contains(@style,'transform')]").text.strip()
                 # Remove all bets, if the odds have changed after the wager was selected
                 case 5:
                     for elem in self.bid.driver.find_elements(By.XPATH,
