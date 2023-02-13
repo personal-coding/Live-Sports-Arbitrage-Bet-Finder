@@ -250,10 +250,12 @@ class App(object):
                         self.ask_button = None
                 # Submit the wager
                 case 9:
-                    self.bid_button.click()
+                    self.bid.driver.execute_script("arguments[0].click();", self.bid_button)
+                    #self.bid_button.click()
                 # Submit the wager
                 case 10:
-                    self.ask_button.click()
+                    self.ask.driver.execute_script("arguments[0].click();", self.ask_button)
+                    #self.ask_button.click()
         except Exception as e:
             self.bid.driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
             self.ask.driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
