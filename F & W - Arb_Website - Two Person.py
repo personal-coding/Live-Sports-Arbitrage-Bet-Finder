@@ -61,7 +61,7 @@ class App(object):
         self.bet_limit = 0.10  # Most websites require a minimum of $0.10 a wager on each bet
         self.odds_limit = 750  # The upper odds limit that you want to wager on (i.e. +750)
 
-        self.ask = ArbFinder('https://il.sportsbook.fanduel.com/live')
+        self.ask = ArbFinder('https://sportsbook.fanduel.com/live')
         self.ask.driver.implicitly_wait(5)
         self.ask.set_type(ASK=1, BID=0)
         self.running = False
