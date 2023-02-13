@@ -4,7 +4,7 @@ from gevent import monkey
 monkey.patch_all()
 
 import time, logging, sys, linecache, random
-import undetected_chromedriver.v2 as uc
+import undetected_chromedriver as uc
 from tkinter import *
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
