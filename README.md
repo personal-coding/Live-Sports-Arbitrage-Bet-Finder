@@ -17,7 +17,7 @@ There are three Python programs in this repository.
 
 The program will first scrape all live event names and odds based on the sport selected in the program. The live event names are matched against each sportsbook in order to compare live odds. Using a Nash equilibrium, the program will find if there are arbitrage betting opportunities. If an arbitrage is found, then the program will select that wager, enter the calculated wager amounts and place the bet.
 
-The programs use multithreading to make them as fast as possible to find arbitrage opportunities. Also, the programs use the [undetected-chromedriver-modified](https://pypi.org/project/undetected-chromedriver-modified/) package to help avoid bot detection.
+The programs use multithreading to make them as fast as possible to find arbitrage opportunities. Also, the programs use the [undetected-chromedriver](https://pypi.org/project/undetected-chromedriver/) package to help avoid bot detection.
 
 **Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds.
 
