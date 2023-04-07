@@ -13,7 +13,7 @@ Looking to find arbitrage betting opportunities during live sports events? Look 
 
 The program uses multithreading to find arbitrage opportunities as quickly as possible and employs the [undetected-chromedriver](https://pypi.org/project/undetected-chromedriver/) package to help avoid bot detection. Keep in mind that most sportsbooks include a bet delay and that there may be a delay between placing your bets at different sportsbooks.
 
-You can also personalize the program by changing the sport, adjusting the bet amount, and modifying the arbitrage return and odds limits.
+You can also personalize the program by changing the sport, adjusting the bet amount, and modifying the arbitrage return and odds limits. See additional information below.
 
 ## Troubleshooting Error
 
