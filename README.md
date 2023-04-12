@@ -1,4 +1,4 @@
-# Live Sports Arbitrage Bet Finder: Find Arbitrage Opportunities in Real-time
+# Live Sports Arbitrage Bet Finder
 
 ## Summary
 
