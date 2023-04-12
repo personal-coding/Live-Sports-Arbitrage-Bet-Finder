@@ -9,7 +9,7 @@ _**This code is provided for informational purposes, and I do not take responsib
 
 ## Introduction
 
-Looking to find arbitrage betting opportunities during live sports events? Look no further than this Python program that scrapes live data off betting websites every 10 milliseconds to find arbitrage opportunities, calculates the exact wagering amounts needed, and places bets. With three different programs for FanDuel, DraftKings, and William Hill, and two-person or multi-person events, this program can handle a wide variety of sports events.
+This Python program that scrapes live data off betting websites every 10 milliseconds to find arbitrage opportunities, calculates the exact wagering amounts needed, and places bets. With three different programs for FanDuel, DraftKings, and William Hill, and two-person or multi-person events, this program can handle a wide variety of sports events.
 
 The program uses multithreading to find arbitrage opportunities as quickly as possible and employs the [undetected-chromedriver](https://pypi.org/project/undetected-chromedriver/) package to help avoid bot detection. Keep in mind that most sportsbooks include a bet delay and that there may be a delay between placing your bets at different sportsbooks.
 
