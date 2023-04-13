@@ -21,6 +21,13 @@ If you run into an error that states `AttributeError: 'ArbFinder' object has no 
 
 ## Personalizing the programs
 
+There are three Python programs in this repository.
+
+- The program names start with F & D or F & W. F stands for FanDuel, D stands for DraftKings, and W stands for William Hill.
+- Programs that end with "Two Person" are for two person or two team events that include only moneyline bets (such as tennis).
+- Programs that do not end with this phrase are for sports that include over / under bets, moneyline and spread bets (such as baseball).
+- The automated bot only looks for standard bet types.
+
 Update this section of the code if you want to bet on a different sport:
 
 ```
