@@ -1,25 +1,12 @@
-# Live Sports Arbitrage Bet Finder
+# Live Sports Arbitrage Bet Finder - FanDuel, DraftKings, William Hill
 
 ## Summary
 
 ![Live sports arbitrage bet finder in action](https://github.com/ScrapeWithYuri/Live-Sports-Arbitrage-Bet-Finder/blob/main/Program_in_action.gif)
 
-_**This code is provided for informational purposes, and I do not take responsibility for potential losses or gains. Bet at your own risk.**_
+_**I've provided this code for informational purposes, and do not take responsibility for potential losses or gains. Bet at your own risk.**_
 
-
-## Introduction
-
-This Python program that scrapes live data off betting websites every 10 milliseconds to find arbitrage opportunities, calculates the exact wagering amounts needed, and places bets. With three different programs for FanDuel, DraftKings, and William Hill, and two-person or multi-person events, this program can handle a wide variety of sports events.
-
-The program uses multithreading to find arbitrage opportunities as quickly as possible and employs the [undetected-chromedriver](https://pypi.org/project/undetected-chromedriver/) package to help avoid bot detection. Keep in mind that most sportsbooks include a bet delay and that there may be a delay between placing your bets at different sportsbooks.
-
-You can also personalize the program by changing the sport, adjusting the bet amount, and modifying the arbitrage return and odds limits. See additional information below.
-
-## Troubleshooting error
-
-If you run into an error that states `AttributeError: 'ArbFinder' object has no attribute 'driver'` go to `chrome://settings/help` in your URL bar. There may be a relaunch option where your Chrome version is. Otherwise, try to upgrade your Chrome version. Your Chrome version may be different from the ChromeDriver version downloaded by the program.
-
-## Personalizing the programs
+This program will find arbitrage betting opportunities during live sports events. The program will scrape live data off betting websites every 10 milliseconds, find if an arbitrage exists, calculate the exact wagering amounts needed, and place bets.
 
 There are three Python programs in this repository.
 
@@ -27,6 +14,18 @@ There are three Python programs in this repository.
 - Programs that end with "Two Person" are for two person or two team events that include only moneyline bets (such as tennis).
 - Programs that do not end with this phrase are for sports that include over / under bets, moneyline and spread bets (such as baseball).
 - The automated bot only looks for standard bet types.
+
+The program will first scrape all live event names and odds based on the sport selected in the program. The live event names are matched against each sportsbook in order to compare live odds. Using a Nash equilibrium, the program will find if there are arbitrage betting opportunities. If an arbitrage is found, then the program will select that wager, enter the calculated wager amounts and place the bet.
+
+The programs use multithreading to make them as fast as possible to find arbitrage opportunities. Also, the programs use the [undetected-chromedriver](https://pypi.org/project/undetected-chromedriver/) package to help avoid bot detection.
+
+**Please note** that most sportsbooks include a bet delay. After a bet is placed, the sportsbook will take several seconds to validate the bet. During this time, one sportsbook may accept your bet, while the other sportsbook may update its odds.
+
+## Troubleshooting Error
+
+If you run into an error that states `AttributeError: 'ArbFinder' object has no attribute 'driver'` go to `chrome://settings/help` in your URL bar. There may be a relaunch option where your Chrome version is. Otherwise, try to upgrade your Chrome version. Your Chrome version may be different from the ChromeDriver version downloaded by the program.
+
+## Personalizing the programs
 
 Update this section of the code if you want to bet on a different sport:
 
