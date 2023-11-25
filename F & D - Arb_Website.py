@@ -7,6 +7,7 @@ import time, logging, sys, linecache, random
 import undetected_chromedriver as uc
 from tkinter import *
 from selenium.webdriver.common.by import By
+from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.common.keys import Keys
@@ -22,13 +23,12 @@ class ArbFinder(object):
         try:
             # Setup ChromeDriver
             self.URL = URL
-            self.driver = uc.Chrome()
-            # elf.driver.set_window_size(1400, 5000)
+            self.driver = webdriver.Chrome()  # Change this line
             self.driver.implicitly_wait(5)
             self.driver.get(URL)
         except:
             pass
-        self.sport = 'Baseball'
+        self.sport = 'Basketball'
 
     def set_type(self, ASK=0, BID=1):
         # time.sleep(1)
